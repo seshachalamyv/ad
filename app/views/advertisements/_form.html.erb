@@ -1,0 +1,53 @@
+<%= form_for(@advertisement) do |f| %>
+  <% if @advertisement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@advertisement.errors.count, "error") %> prohibited this advertisement from being saved:</h2>
+
+      <ul>
+      <% @advertisement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :profile_id %><br>
+    <%= f.text_field :profile_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.number_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :acost %><br>
+    <%= f.number_field :acost %>
+  </div>
+  <div class="field">
+    <%= f.label :bcost %><br>
+    <%= f.number_field :bcost %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :balance %><br>
+    <%= f.check_box :balance %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

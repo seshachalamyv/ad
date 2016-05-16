@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @advertisement.profile %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @advertisement.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @advertisement.type %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @advertisement.cost %>
+</p>
+
+<p>
+  <strong>Acost:</strong>
+  <%= @advertisement.acost %>
+</p>
+
+<p>
+  <strong>Bcost:</strong>
+  <%= @advertisement.bcost %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @advertisement.active %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @advertisement.balance %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @advertisement.date %>
+</p>
+
+<%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
+<%= link_to 'Back', advertisements_path %>

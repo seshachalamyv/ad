@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profile_id: 
+  name: MyString
+  type: 
+  cost: 1
+  acost: 1
+  bcost: 1
+  active: false
+  balance: false
+  date: 2016-05-16
+
+two:
+  profile_id: 
+  name: MyString
+  type: 
+  cost: 1
+  acost: 1
+  bcost: 1
+  active: false
+  balance: false
+  date: 2016-05-16
